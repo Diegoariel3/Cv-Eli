@@ -18,6 +18,9 @@ header img {
     height:200px;
     margin-top: 5px;
     align-self: center;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   
 }
 .header_title_container {
     width: 90%;
@@ -54,27 +57,31 @@ header img {
     font-weight: 800;
     color: #3C6255;
 }
-.contact {
+.contact , .experience {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #3C6255;
 }
-.contact img {
+.contact img , .experience img {
     width: 30px;
     height: 30px;
     margin-left: 50px;
 }
-.contact p  {
+.contact p , .experience p {
     font-size: 1.8rem;
     font-weight: 600;
     color: #3C6255;
     padding-left: 30px;
 }
+.contact_information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #3C6255;
+}
 .contact_information ul li {
     list-style: none;
     font-size: 1.6rem;
-    display: flex;
-    align-items: center;
 }
 .contact_information li:nth-child(1) {
     background-image: url(./assets/llamada-telefonica.png);
