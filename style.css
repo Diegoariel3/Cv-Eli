@@ -34,13 +34,7 @@ header img {
 .header_title_container h1 {
     font-size: 3.4rem;
     font-weight: bold;    
-    line-height: 1.6rem;  
-}
-.header_title_container p {
-    margin-top: 15px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.8rem;
+    line-height: 3rem;  
 }
 .navbar ul {
     height: 50px;
@@ -57,17 +51,20 @@ header img {
     font-weight: 800;
     color: #3C6255;
 }
-.contact , .experience {
+.contact , .experience , .studies , .target {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #3C6255;
 }
-.contact img , .experience img {
+.studies , .target {
+    border-top: 1px solid #3C6255;
+}
+.contact img , .experience img , .studies img , .target img {
     width: 30px;
     height: 30px;
     margin-left: 50px;
 }
-.contact p , .experience p {
+.contact p , .experience p , .studies p , .target p {
     font-size: 1.8rem;
     font-weight: 600;
     color: #3C6255;
@@ -78,6 +75,7 @@ header img {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #3C6255;
+    display: none;
 }
 .contact_information ul li {
     list-style: none;
@@ -112,4 +110,31 @@ header img {
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 40px;
+}
+.experience_box , .studies_box , .target_box {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: none;
+}
+.experience_box h2 , .studies_box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.experience_box p , .studies_box p , .target_box p {
+    font-size: 1.2rem;
+}
+ion-icon {
+    font-size: 64px;
+    color: deeppink;
+    --ionicon-stroke-width: 26px;
+}
+.navbar a:hover {
+    font-size: 1.6rem;
+}
+.contact p:hover, .experience p:hover, .studies p:hover , .target p:hover {
+    color: #A6BB8D;
 }
